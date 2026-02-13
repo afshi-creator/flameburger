@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flame Burger | Fast Food Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+<header>
+    <div class="container nav-container">
+        <h1 class="logo">Flame<span>Burger</span></h1>
+        <nav>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <button class="btn" onclick="viewOrder()" style="margin-left: 20px;">View Order</button>
+        </nav>
+    </div>
+</header>
+
+
+<!-- Menu Section -->
+<section class="menu">
+    <div class="container">
+        <h2 class="section-title">Taste The Best</h2>
+
+        <div class="menu-grid">
+            <div class="card">
+                <img src="images/smash-burgers.jpg" alt="Burger">
+                <h3>Classic Beef Burger</h3>
+                <p>Juicy grilled beef with fresh lettuce and cheese.</p>
+                <span>Rs. 400</span>
+                <button class="btn" onclick="orderItem('Classic Beef Burger', 400)">Order Now</button>
+            </div>
+
+            <div class="card">
+                <img src="images/cheese pizza.jpg" alt="Pizza">
+                <h3>Cheese Pizza</h3>
+                <p>Loaded with mozzarella and fresh toppings.</p>
+                <span>Rs. 899</span>
+                <button class="btn" onclick="orderItem('Cheese Pizza', 899)">Order Now</button>
+            </div>
+
+            <div class="card">
+                <img src="images/paprika fries.jpg" alt="Fries">
+                <h3>Crispy Fries</h3>
+                <p>Golden fried potato fries with special seasoning.</p>
+                <span>Rs. 300</span>
+                <button class="btn" onclick="orderItem('Crispy Fries', 300)">Order Now</button>
+            </div>
+
+             <div class="card">
+                <img src="images/wings.jpg" alt="Wings">
+                <h3>Spicy Wings</h3>
+                <p>Crispy chicken wings with spicy sauce.</p>
+                <span>Rs. 450</span>
+                <button class="btn" onclick="orderItem('Spicy Wings', 450)">Order Now</button>
+            </div>
+
+             <div class="card">
+                <img src="images/burrito.jpg" alt="Fresh Burrito">
+                <h3>Fresh Burrito</h3>
+                <p>Delicious burrito filled with fresh ingredients.</p>
+                <span>Rs. 500</span>
+                <button class="btn" onclick="orderItem('Fresh Burrito', 500)">Order Now</button>
+            </div>
+
+             <div class="card">
+                <img src="images/bacon club sandwich.jpg" alt="Bacon Club Sandwich">
+                <h3>Bacon Club Sandwich</h3>
+                <p>Delicious club sandwich with crispy bacon and fresh vegetables.</p>
+                <span>Rs. 600</span>
+                <button class="btn" onclick="orderItem('Bacon Club Sandwich', 600)">Order Now</button>
+            </div>
+
+             <div class="card">
+                <img src="images/spicy ramen.jpg" alt="Ramen">
+                <h3>Spicy Ramen</h3>
+                <p>Hot and spicy ramen with fresh vegetables and noodles.</p>
+                <span>Rs. 400</span>
+                <button class="btn" onclick="orderItem('Spicy Ramen', 400)">Order Now</button>
+            </div>
+
+             <div class="card">
+                <img src="images/chatnuy roll.jpg" alt="Chicken Roll">
+                <h3>Chicken Roll</h3>
+                <p>Delicious chicken roll with fresh vegetables and sauce.</p>
+                <span>Rs. 450</span>
+                <button class="btn" onclick="orderItem('Chicken Roll', 450)">Order Now</button>
+            </div>
+
+             <div class="card">
+                <img src="images/pasta.jpg" alt="Pasta">
+                <h3>Delicious Pasta</h3>
+                <p>Rich and creamy pasta with fresh herbs and cheese.</p>
+                <span>Rs. 500</span>
+                <button class="btn" onclick="orderItem('Delicious Pasta', 500)">Order Now</button>
+            </div>
+
+             <div class="card">
+                <img src="images/crispy burger.jpg" alt="Crispy Burger">
+                <h3>Crispy Burger</h3>
+                <p>Delicious crispy burger with fresh vegetables and sauce.</p>
+                <span>Rs. 450</span>
+                <button class="btn" onclick="orderItem('Crispy Burger', 450)">Order Now</button>
+            </div>
+
+             <div class="card">
+                <img src="images/chicago burger.jpg" alt="Chicago Burger">
+                <h3>Chicago Burger</h3>
+                <p>Delicious burger with special Chicago-style sauce and fresh vegetables.</p>
+                <span>Rs. 550</span>
+                <button class="btn" onclick="orderItem('Chicago Burger', 550)">Order Now</button>
+            </div>
+
+             <div class="card">
+                <img src="images/meal deal.jpg" alt="Meal Deal">
+                <h3>Meal Deal</h3>
+                <p>Delicious meal deal with burger, fries, and drink.</p>
+                <span>Rs. 600</span>
+                <button class="btn" onclick="orderItem('Meal Deal', 600)">Order Now</button>
+            </div>
+
+             <div class="card">
+                <img src="images/special deal.jpg" alt="Special Deal">
+                <h3>Special Deal</h3>
+                <p>Delicious special deal with burger, fries, and drink.</p>
+                <span>Rs. 1100</span>
+                <button class="btn" onclick="orderItem('Special Deal', 1100)">Order Now</button>
+            </div>
+
+             <div class="card">
+                <img src="images/hungers deal.jpg" alt="Hungers Deal">
+                <h3>Hungers Deal</h3>
+                <p>Delicious hungry deal with burger, fries, nugets, and drink.</p>
+                <span>Rs. 1250</span>
+                <button class="btn" onclick="orderItem('Hungers Deal', 1250)">Order Now</button>
+            </div>
+
+             <div class="card">
+                <img src="images/festival deal.jpg" alt="Festival Deal">
+                <h3>Festival Deal</h3>
+                <p>Delicious festival deal with burger, fries, nugets, and drink.</p>
+                <span>Rs. 1400</span>
+                <button class="btn" onclick="orderItem('Festival Deal', 1400)">Order Now</button>
+            </div>
+
+             <div class="card">
+                <img src="images/bigger deal.jpg" alt="big deal">
+                <h3>Big Deal</h3>
+                <p>Big deal for family, friends.</p>
+                <span>Rs. 2000</span>
+                <button class="btn" onclick="orderItem('Big Deal', 2000)">Order Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 FlameBurger. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
